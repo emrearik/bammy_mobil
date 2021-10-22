@@ -1,0 +1,29 @@
+[
+    {
+        "bamya_turu" : "AMASYA\nBAMYASI",
+        "bamya_resim" : "assets/bamya_resim/amasya_bamyasi.png",
+        "bamya_detay" : "Amasya, Tokat ve İç Anadolu’da yaygın olarak yetiştirilen çiçek bamyası açık yeşil renkli ve küçük meyvelidir. Çiçekler açılarak döllenme tamamlandıktan bir süre sonra hasat yapılır. Ortalama 0,5-1 cm büyüklüğündeki meyveler şekil olarak sultani bamyaya benzer ancak çok küçüktürler. Çiçek bamyası genellikle kurutmalık olarak değerlendirilir."
+    },
+
+    {
+        "bamya_turu" : "SULTANİ\nBAMYA",
+        "bamya_resim" : "assets/bamya_resim/sultani_bamya.png",
+        "bamya_detay" : "Marmara ve Ege bölgelerimzide yaygın yetiştirilen koyu yeşil renkli, düzgün beşgen şekilli meyvelere sahip önemli bir çeşidimizdir. Boyutları 4-5 cm arasında olmaktadır. Oldukça yumuşak olan bu bamya aynı zamanda oldukça lezzetlidir. Bu özelliği bu bamyayı diğer çeşitlerinden ayırıcı bir özellik göstermektedir. Bu bamya gıda sanayi tarafından en çok işlenen bamya olarak bilinmektedir. Piyasadaki konservelerin büyük bir çoğunluğu bu bamya çeşidinden üretilmektedir."
+       
+    },
+
+    
+    {
+        "bamya_turu" : "BORNOVA\nBAMYASI",
+        "bamya_resim" : "assets/bamya_resim/bornova_bamyasi.png",
+        "bamya_detay" : "Ege bölgesinde yetiştirilen Bornova bamyası sofralık ve konservelik bir çeşittir. Ucu hafif tombul ve sap bağlantı kısmı incedir. Boyutları 3-4 cm arasında olmaktadır. En belirgin özelliği ise sap bağlantı kısmının mor renk taşımasıdır. Bu nedenle halk arasında kınalı bamya olarak da bilinir. Beş köşeli, meyve etli ve çok lezzetlidir. Sümüksü yapı oluşturmaması nedeniyle konserve değeri yüksektir. Meyve sultani bamya kadar uzun değildir."
+       
+    },
+
+    {
+        "bamya_turu" : "BALIKESİR\nBAMYASI",
+        "bamya_resim" : "assets/bamya_resim/balikesir_bamyasi.png",
+        "bamya_detay" : "Balıkesir bamyası altı köşeli ve etli meyvelidir. Çok kısa şişkin meyveli ve ucu küttür. Bu nedenle tombul bamya olarak adlandırılır. Boyutları 2-3 cm arasında olmaktadır. Taze tüketime ve konserve için uygun olan bu çeşidin meyveleri etli, ancak çok çekirdeklidir."
+       
+    }
+]
