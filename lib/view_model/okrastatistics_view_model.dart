@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:bammy_mobil/models/bamya_istatistik.dart';
+import 'package:bammy_mobil/models/okra_statistics.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:mobx/mobx.dart';
@@ -18,7 +18,7 @@ abstract class _OkraStatisticsViewModelBase with Store {
   @action
   Future<List> readData() async {
     List<dynamic> decodedJson =
-        json.decode(await rootBundle.loadString("assets/json/istatistik.json"));
+        json.decode(await rootBundle.loadString("assets/json/statistics.json"));
 
     okraStatisticsList =
         decodedJson.map((okra) => OkraStatistics.fromJson(okra)).toList();

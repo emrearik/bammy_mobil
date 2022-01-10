@@ -1,4 +1,4 @@
-import 'package:bammy_mobil/models/bamya_istatistik.dart';
+import 'package:bammy_mobil/models/okra_statistics.dart';
 import 'package:bammy_mobil/screens/collected_okra_statistic.dart';
 import 'package:bammy_mobil/screens/screens.dart';
 import 'package:bammy_mobil/view_model/okrastatistics_view_model.dart';
@@ -51,9 +51,9 @@ class HomePageCollectedWidget extends StatelessWidget {
                           );
                         },
                         child: collectedOkraWidgets(
-                            _viewModel.okraStatisticsList[index].bamyaTuru
+                            _viewModel.okraStatisticsList[index].okraType
                                 .toString(),
-                            _viewModel.okraStatisticsList[index].bamyaResim
+                            _viewModel.okraStatisticsList[index].okraImage
                                 .toString()),
                       );
                     })
@@ -65,7 +65,7 @@ class HomePageCollectedWidget extends StatelessWidget {
     );
   }
 
-  Widget collectedOkraWidgets(String bamyaCesidi, String img) {
+  Widget collectedOkraWidgets(String okraType, String img) {
     return Padding(
       padding: const EdgeInsets.fromLTRB(10, 0, 0, 0),
       child: Container(
@@ -122,7 +122,7 @@ class HomePageCollectedWidget extends StatelessWidget {
               left: 10,
               top: 100,
               child: Text(
-                bamyaCesidi,
+                okraType,
                 style: GoogleFonts.montserrat(
                   textStyle: const TextStyle(
                     fontSize: 12,

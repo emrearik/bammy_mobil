@@ -1,0 +1,18 @@
+[
+    {
+        "okra_type": "AMASYA\nBAMYASI",
+        "okra_image": "assets/bamya_resim/amasya_bamyasi.png",
+        "collected_date": "02.06.2021",
+        "collected_time": "8 Saat",
+        "collected_amount": "15 Kg",
+        "next_collected_date": "04.06.2021"
+    },
+    {
+        "okra_type": "BALIKESİR\nBAMYASI",
+        "okra_image": "assets/bamya_resim/balikesir_bamyasi.png",
+        "collected_date": "04.06.2021",
+        "collected_time": "4 Saat",
+        "collected_amount": "7.5 Kg",
+        "next_collected_date": "08.06.2021"
+    }
+]

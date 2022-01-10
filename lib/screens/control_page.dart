@@ -57,7 +57,7 @@ class ControlPage extends StatelessWidget {
               ),
             ),
             SizedBox(height: 5),
-            tekerlekVeGovdeKontrolu(),
+            wheelAndBodyControl(),
             SizedBox(height: 10),
             Text(
               "Kol Kontrolü",
@@ -69,7 +69,7 @@ class ControlPage extends StatelessWidget {
                 ),
               ),
             ),
-            kolKontrolu(),
+            armControl(),
           ],
         ),
       ),
@@ -77,14 +77,14 @@ class ControlPage extends StatelessWidget {
   }
 }
 
-Widget tekerlekVeGovdeKontrolu() {
+Widget wheelAndBodyControl() {
   return Column(
     children: [
       Center(
         //yukarı button
         child: GestureDetector(
           onTap: () {
-            print("tekerlek govde kontrolu yukari tiklandi");
+            print("Wheel and Body Control - Click UP");
           },
           child: controlBox(
             Icon(Icons.keyboard_arrow_up),
@@ -98,7 +98,7 @@ Widget tekerlekVeGovdeKontrolu() {
           //sol button
           GestureDetector(
             onTap: () {
-              print("tekerlek govde kontrolu sol tiklandi");
+              print("Wheel and Body Control - Click LEFT");
             },
             child: controlBox(
               Icon(Icons.keyboard_arrow_left),
@@ -107,7 +107,7 @@ Widget tekerlekVeGovdeKontrolu() {
           //sag button
           GestureDetector(
             onTap: () {
-              print("tekerlek govde kontrolu sag tiklandi");
+              print("Wheel and Body Control - Click RIGHT");
             },
             child: controlBox(
               Icon(Icons.keyboard_arrow_right),
@@ -120,7 +120,7 @@ Widget tekerlekVeGovdeKontrolu() {
         //asagı button
         child: GestureDetector(
           onTap: () {
-            print("tekerlek govde kontrolu asagi tiklandi");
+            print("Wheel and Body Control - Click DOWN");
           },
           child: controlBox(
             Icon(Icons.keyboard_arrow_down),
@@ -133,13 +133,13 @@ Widget tekerlekVeGovdeKontrolu() {
           //govde kaldir button
           GestureDetector(
               onTap: () {
-                print("tekerlek govde kontrolu govdeyi yukari kaldir tiklandi");
+                print("Wheel and Body Control - Click LIFT UP");
               },
               child: textButton("Gövdeyi\nYukarı Kaldır", 110)),
           //govde indir button
           GestureDetector(
               onTap: () {
-                print("tekerlek govde kontrolu govdeyi asagi indir tiklandi");
+                print("Wheel and Body Control - Click LIFT DOWN");
               },
               child: textButton("Gövdeyi\nAşağı İndir", 110)),
         ],
@@ -148,14 +148,14 @@ Widget tekerlekVeGovdeKontrolu() {
   );
 }
 
-Widget kolKontrolu() {
+Widget armControl() {
   return Column(
     children: [
       Center(
         //yukarı button
         child: GestureDetector(
           onTap: () {
-            print("kol kontrolu yukari tiklandi");
+            print("Arm Control - Click UP");
           },
           child: controlBox(
             Icon(Icons.keyboard_arrow_up),
@@ -169,7 +169,7 @@ Widget kolKontrolu() {
           //sol button
           GestureDetector(
             onTap: () {
-              print("kol kontrolu sol tiklandi");
+              print("Arm Control - Click LEFT");
             },
             child: controlBox(
               Icon(Icons.keyboard_arrow_left),
@@ -178,14 +178,14 @@ Widget kolKontrolu() {
           //kes button
           GestureDetector(
             onTap: () {
-              print("kol kontrolu KES tiklandi");
+              print("Arm Control - Click CUT");
             },
             child: textButton("KES", 70),
           ),
           //sag button
           GestureDetector(
             onTap: () {
-              print("kol kontrolu sag tiklandi");
+              print("Arm Control - Click RIGHT");
             },
             child: controlBox(
               Icon(Icons.keyboard_arrow_right),
@@ -198,7 +198,7 @@ Widget kolKontrolu() {
         //asagı button
         child: GestureDetector(
           onTap: () {
-            print("kol kontrolu asagi tiklandi");
+            print("Arm Control - Click DOWN");
           },
           child: controlBox(
             Icon(Icons.keyboard_arrow_down),

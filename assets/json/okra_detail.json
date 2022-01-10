@@ -1,0 +1,22 @@
+[
+    {
+        "okra_type": "AMASYA\nBAMYASI",
+        "okra_image": "assets/bamya_resim/amasya_bamyasi.png",
+        "okra_detail": "Amasya, Tokat ve İç Anadolu’da yaygın olarak yetiştirilen çiçek bamyası açık yeşil renkli ve küçük meyvelidir. Çiçekler açılarak döllenme tamamlandıktan bir süre sonra hasat yapılır. Ortalama 0,5-1 cm büyüklüğündeki meyveler şekil olarak sultani bamyaya benzer ancak çok küçüktürler. Çiçek bamyası genellikle kurutmalık olarak değerlendirilir."
+    },
+    {
+        "okra_type": "SULTANİ\nBAMYA",
+        "okra_image": "assets/bamya_resim/sultani_bamya.png",
+        "okra_detail": "Marmara ve Ege bölgelerimzide yaygın yetiştirilen koyu yeşil renkli, düzgün beşgen şekilli meyvelere sahip önemli bir çeşidimizdir. Boyutları 4-5 cm arasında olmaktadır. Oldukça yumuşak olan bu bamya aynı zamanda oldukça lezzetlidir. Bu özelliği bu bamyayı diğer çeşitlerinden ayırıcı bir özellik göstermektedir. Bu bamya gıda sanayi tarafından en çok işlenen bamya olarak bilinmektedir. Piyasadaki konservelerin büyük bir çoğunluğu bu bamya çeşidinden üretilmektedir."
+    },
+    {
+        "okra_type": "BORNOVA\nBAMYASI",
+        "okra_image": "assets/bamya_resim/bornova_bamyasi.png",
+        "okra_detail": "Ege bölgesinde yetiştirilen Bornova bamyası sofralık ve konservelik bir çeşittir. Ucu hafif tombul ve sap bağlantı kısmı incedir. Boyutları 3-4 cm arasında olmaktadır. En belirgin özelliği ise sap bağlantı kısmının mor renk taşımasıdır. Bu nedenle halk arasında kınalı bamya olarak da bilinir. Beş köşeli, meyve etli ve çok lezzetlidir. Sümüksü yapı oluşturmaması nedeniyle konserve değeri yüksektir. Meyve sultani bamya kadar uzun değildir."
+    },
+    {
+        "okra_type": "BALIKESİR\nBAMYASI",
+        "okra_image": "assets/bamya_resim/balikesir_bamyasi.png",
+        "okra_detail": "Balıkesir bamyası altı köşeli ve etli meyvelidir. Çok kısa şişkin meyveli ve ucu küttür. Bu nedenle tombul bamya olarak adlandırılır. Boyutları 2-3 cm arasında olmaktadır. Taze tüketime ve konserve için uygun olan bu çeşidin meyveleri etli, ancak çok çekirdeklidir."
+    }
+]

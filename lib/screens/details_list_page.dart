@@ -1,5 +1,5 @@
 import 'package:bammy_mobil/screens/details_page.dart';
-import 'package:bammy_mobil/view_model/bamyadetay_view_model.dart';
+import 'package:bammy_mobil/view_model/okradetail_view_model.dart';
 import 'package:bammy_mobil/widgets/details_page_widget.dart';
 import 'package:bammy_mobil/widgets/widgets.dart';
 import 'package:flutter/material.dart';
@@ -7,7 +7,7 @@ import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class DetailsListPage extends StatelessWidget {
-  final _viewModel = BamyaDetayViewModel();
+  final _viewModel = OkraDetailViewModel();
   DetailsListPage({Key? key}) : super(key: key);
 
   @override
@@ -33,9 +33,9 @@ class DetailsListPage extends StatelessWidget {
             SizedBox(height: 10),
             Observer(
               builder: (_) {
-                _viewModel.veriKaynaginiOku();
+                _viewModel.getDataSource();
                 return Container(
-                  child: _viewModel.isServiceRequrestLoading
+                  child: _viewModel.isServiceRequestLoading
                       ? SingleChildScrollView(
                           child: Container(
                             height: MediaQuery.of(context).size.height,
@@ -43,7 +43,7 @@ class DetailsListPage extends StatelessWidget {
                                 physics: PageScrollPhysics(),
                                 separatorBuilder: (context, index) =>
                                     SizedBox(height: 10),
-                                itemCount: _viewModel.bamyaDetayListesi.length,
+                                itemCount: _viewModel.okraDetailsList.length,
                                 itemBuilder: (context, index) {
                                   return index % 2 == 0
                                       ? GestureDetector(
@@ -53,27 +53,27 @@ class DetailsListPage extends StatelessWidget {
                                               MaterialPageRoute(
                                                 builder: (context) =>
                                                     DetailsPage(
-                                                  bamyaTuru: _viewModel
-                                                      .bamyaDetayListesi[index]
-                                                      .bamyaTuru!,
-                                                  bamyaDetay: _viewModel
-                                                      .bamyaDetayListesi[index]
-                                                      .bamyaDetay!,
-                                                  bamyaResim: _viewModel
-                                                      .bamyaDetayListesi[index]
-                                                      .bamyaResim!,
+                                                  okraType: _viewModel
+                                                      .okraDetailsList[index]
+                                                      .okraType!,
+                                                  okraDetail: _viewModel
+                                                      .okraDetailsList[index]
+                                                      .okraDetail!,
+                                                  okraImage: _viewModel
+                                                      .okraDetailsList[index]
+                                                      .okraImage!,
                                                 ),
                                               ),
                                             );
                                           },
                                           child:
                                               DetailsPageCustomShapeVersion1Widget(
-                                                  bamyaTuru: _viewModel
-                                                      .bamyaDetayListesi[index]
-                                                      .bamyaTuru,
+                                                  okraType: _viewModel
+                                                      .okraDetailsList[index]
+                                                      .okraType,
                                                   imgPath: _viewModel
-                                                      .bamyaDetayListesi[index]
-                                                      .bamyaResim),
+                                                      .okraDetailsList[index]
+                                                      .okraImage),
                                         )
                                       : GestureDetector(
                                           onTap: () {
@@ -82,27 +82,27 @@ class DetailsListPage extends StatelessWidget {
                                               MaterialPageRoute(
                                                 builder: (context) =>
                                                     DetailsPage(
-                                                  bamyaTuru: _viewModel
-                                                      .bamyaDetayListesi[index]
-                                                      .bamyaTuru!,
-                                                  bamyaDetay: _viewModel
-                                                      .bamyaDetayListesi[index]
-                                                      .bamyaDetay!,
-                                                  bamyaResim: _viewModel
-                                                      .bamyaDetayListesi[index]
-                                                      .bamyaResim!,
+                                                  okraType: _viewModel
+                                                      .okraDetailsList[index]
+                                                      .okraType!,
+                                                  okraDetail: _viewModel
+                                                      .okraDetailsList[index]
+                                                      .okraDetail!,
+                                                  okraImage: _viewModel
+                                                      .okraDetailsList[index]
+                                                      .okraImage!,
                                                 ),
                                               ),
                                             );
                                           },
                                           child:
                                               DetailsPageCustomShapeVersion2Widget(
-                                                  bamyaTuru: _viewModel
-                                                      .bamyaDetayListesi[index]
-                                                      .bamyaTuru,
+                                                  okraType: _viewModel
+                                                      .okraDetailsList[index]
+                                                      .okraType,
                                                   imgPath: _viewModel
-                                                      .bamyaDetayListesi[index]
-                                                      .bamyaResim),
+                                                      .okraDetailsList[index]
+                                                      .okraImage),
                                         );
                                 }),
                           ),

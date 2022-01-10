@@ -1,19 +1,19 @@
-import 'package:bammy_mobil/view_model/bamyadetay_view_model.dart';
+import 'package:bammy_mobil/view_model/okradetail_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class DetailsPage extends StatelessWidget {
-  final String bamyaTuru;
-  final String bamyaDetay;
-  final String bamyaResim;
+  final String okraType;
+  final String okraDetail;
+  final String okraImage;
 
   DetailsPage(
       {Key? key,
-      required this.bamyaTuru,
-      required this.bamyaDetay,
-      required this.bamyaResim})
+      required this.okraType,
+      required this.okraDetail,
+      required this.okraImage})
       : super(key: key);
 
   @override
@@ -42,7 +42,7 @@ class DetailsPage extends StatelessWidget {
           children: [
             Center(
               child: Text(
-                bamyaTuru,
+                okraType,
                 style: GoogleFonts.montserrat(
                   textStyle: const TextStyle(
                     fontSize: 16,
@@ -59,7 +59,7 @@ class DetailsPage extends StatelessWidget {
               child: Container(
                   width: 323,
                   height: 193,
-                  child: Image.asset(bamyaResim, fit: BoxFit.fill)),
+                  child: Image.asset(okraImage, fit: BoxFit.fill)),
             ),
             SizedBox(height: 10),
             Text(
@@ -74,7 +74,7 @@ class DetailsPage extends StatelessWidget {
             ),
             SizedBox(height: 10),
             Text(
-              bamyaDetay,
+              okraDetail,
               style: GoogleFonts.montserrat(
                 textStyle: const TextStyle(
                   fontSize: 14,

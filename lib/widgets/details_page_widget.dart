@@ -5,11 +5,11 @@ import 'dart:ui' as ui;
 import 'package:google_fonts/google_fonts.dart';
 
 class DetailsPageCustomShapeVersion1Widget extends StatefulWidget {
-  final String? bamyaTuru;
+  final String? okraType;
   final String? imgPath;
 
   const DetailsPageCustomShapeVersion1Widget(
-      {required this.bamyaTuru, required this.imgPath})
+      {required this.okraType, required this.imgPath})
       : super();
   @override
   State<DetailsPageCustomShapeVersion1Widget> createState() =>
@@ -51,7 +51,7 @@ class _DetailsPageCustomShapeVersion1WidgetState
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                widget.bamyaTuru!,
+                widget.okraType!,
                 style: GoogleFonts.montserrat(
                   textStyle: const TextStyle(
                     fontSize: 18,
@@ -69,11 +69,11 @@ class _DetailsPageCustomShapeVersion1WidgetState
 }
 
 class DetailsPageCustomShapeVersion2Widget extends StatefulWidget {
-  final String? bamyaTuru;
+  final String? okraType;
   final String? imgPath;
 
   const DetailsPageCustomShapeVersion2Widget(
-      {required this.bamyaTuru, required this.imgPath})
+      {required this.okraType, required this.imgPath})
       : super();
   @override
   State<DetailsPageCustomShapeVersion2Widget> createState() =>
@@ -115,7 +115,7 @@ class _DetailsPageCustomShapeVersion2WidgetState
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                widget.bamyaTuru!,
+                widget.okraType!,
                 style: GoogleFonts.montserrat(
                   textStyle: const TextStyle(
                     fontSize: 18,
