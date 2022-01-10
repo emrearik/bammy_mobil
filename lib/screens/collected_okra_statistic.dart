@@ -1,4 +1,4 @@
-import 'package:bammy_mobil/view_model/bamyadetay_view_model.dart';
+import 'package:bammy_mobil/view_model/okradetail_view_model.dart';
 import 'package:bammy_mobil/view_model/okrastatistics_view_model.dart';
 import 'package:bammy_mobil/widgets/statistics_page_widget.dart';
 import 'package:flutter/material.dart';
@@ -47,21 +47,21 @@ class CollectedOkraStatisticPage extends StatelessWidget {
                               return Container(
                                 margin: EdgeInsets.fromLTRB(0, 10, 0, 0),
                                 child: StatisticsPageWidget(
-                                  bamyaTuru: _viewModel
+                                  okraType: _viewModel
                                       .okraStatisticsList[collectedOkraIndex]
-                                      .bamyaTuru,
-                                  toplamaTarihi: _viewModel
+                                      .okraType,
+                                  collectedDate: _viewModel
                                       .okraStatisticsList[collectedOkraIndex]
-                                      .toplamaTarihi,
-                                  toplamaSuresi: _viewModel
+                                      .collectedDate,
+                                  collectedTime: _viewModel
                                       .okraStatisticsList[collectedOkraIndex]
-                                      .toplamaSuresi,
-                                  toplamaMiktari: _viewModel
+                                      .collectedTime,
+                                  collectedAmount: _viewModel
                                       .okraStatisticsList[collectedOkraIndex]
-                                      .toplamaMiktari,
-                                  sonrakiToplamaTarihi: _viewModel
+                                      .collectedAmount,
+                                  nextCollectedDate: _viewModel
                                       .okraStatisticsList[collectedOkraIndex]
-                                      .sonrakiToplamaTarihi,
+                                      .nextCollectedDate,
                                 ),
                               );
                             },

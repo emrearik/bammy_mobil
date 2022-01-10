@@ -36,10 +36,10 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_svg: ^0.22.0
   google_fonts: ^2.1.0
-  build_runner: ^2.1.2
   flutter_mobx: ^2.0.2
   mobx_codegen: ^2.0.2
   intl: ^0.17.0
+  build_runner: ^2.1.7
 
 dev_dependencies:
   flutter_test:
@@ -76,8 +76,8 @@ flutter:
      - assets/images/takvim.svg
      - assets/images/tarimlogo_anasayfa.png
      - assets/images/su_bidon.png
-     - assets/json/bamyaDetay.json
-     - assets/json/istatistik.json
+     - assets/json/okra_detail.json
+     - assets/json/statistics.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

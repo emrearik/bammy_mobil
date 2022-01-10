@@ -2,18 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class StatisticsPageWidget extends StatefulWidget {
-  String? bamyaTuru;
-  String? toplamaTarihi;
-  String? toplamaSuresi;
-  String? toplamaMiktari;
-  String? sonrakiToplamaTarihi;
+  String? okraType;
+  String? collectedDate;
+  String? collectedTime;
+  String? collectedAmount;
+  String? nextCollectedDate;
 
   StatisticsPageWidget(
-      {required this.bamyaTuru,
-      required this.toplamaTarihi,
-      required this.toplamaSuresi,
-      required this.toplamaMiktari,
-      required this.sonrakiToplamaTarihi})
+      {required this.okraType,
+      required this.collectedDate,
+      required this.collectedTime,
+      required this.collectedAmount,
+      required this.nextCollectedDate})
       : super();
 
   @override
@@ -33,16 +33,16 @@ class _StatisticsPageWidgetState extends State<StatisticsPageWidget> {
           padding: const EdgeInsets.all(16.0),
           child: Column(
             children: [
-              rowIcerik("Bamya Türü:", widget.bamyaTuru!),
+              rowIcerik("Bamya Türü:", widget.okraType!),
               SizedBox(height: 5),
-              rowIcerik("Toplama Tarihi:", widget.toplamaTarihi!),
+              rowIcerik("Toplama Tarihi:", widget.collectedDate!),
               SizedBox(height: 5),
-              rowIcerik("Toplama Süresi:", widget.toplamaSuresi!),
+              rowIcerik("Toplama Süresi:", widget.collectedTime!),
               SizedBox(height: 5),
-              rowIcerik("Toplama Miktarı:", widget.toplamaMiktari!),
+              rowIcerik("Toplama Miktarı:", widget.collectedAmount!),
               SizedBox(height: 5),
               rowIcerik("Sonraki Toplama Tarihi:\n(Tahmini)",
-                  widget.sonrakiToplamaTarihi!),
+                  widget.nextCollectedDate!),
               SizedBox(height: 5),
             ],
           ),

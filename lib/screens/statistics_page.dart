@@ -40,17 +40,17 @@ class StatisticsPage extends StatelessWidget {
                             return Container(
                               margin: EdgeInsets.fromLTRB(0, 10, 0, 0),
                               child: StatisticsPageWidget(
-                                bamyaTuru: _viewModel
-                                    .okraStatisticsList[index].bamyaTuru,
-                                toplamaTarihi: _viewModel
-                                    .okraStatisticsList[index].toplamaTarihi,
-                                toplamaSuresi: _viewModel
-                                    .okraStatisticsList[index].toplamaSuresi,
-                                toplamaMiktari: _viewModel
-                                    .okraStatisticsList[index].toplamaMiktari,
-                                sonrakiToplamaTarihi: _viewModel
+                                okraType: _viewModel
+                                    .okraStatisticsList[index].okraType,
+                                collectedDate: _viewModel
+                                    .okraStatisticsList[index].collectedDate,
+                                collectedTime: _viewModel
+                                    .okraStatisticsList[index].collectedTime,
+                                collectedAmount: _viewModel
+                                    .okraStatisticsList[index].collectedAmount,
+                                nextCollectedDate: _viewModel
                                     .okraStatisticsList[index]
-                                    .sonrakiToplamaTarihi,
+                                    .nextCollectedDate,
                               ),
                             );
                           },
