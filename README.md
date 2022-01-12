@@ -1,6 +1,6 @@
 # Bammy Mobile App
 
-In this project, it is aimed to control the plant harvesting bammy robot which has artificial intelligence algorithm with a mobile application.
+In this project, it is aimed to control the plant harvesting BAMMY Robot which has artificial intelligence algorithm with a mobile application.
 
 ## Features
 
