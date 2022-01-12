@@ -51,37 +51,6 @@ class _HomePageWelcomeMessageState extends State<HomePageWelcomeMessage> {
                 ),
               ],
             ),
-            /*Material(
-              elevation: 5,
-              borderRadius: BorderRadius.circular(6),
-              child: Container(
-                width: 69,
-                height: 61,
-                child: Center(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      SvgPicture.asset(
-                        "assets/images/takvim.svg",
-                        width: 24,
-                        height: 24,
-                      ),
-                      SizedBox(height: 1),
-                      Text(
-                        "Takvim",
-                        style: GoogleFonts.montserrat(
-                          textStyle: const TextStyle(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w400,
-                            color: Color.fromRGBO(121, 121, 121, 1),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ),*/
           ],
         ),
         SizedBox(height: 24),

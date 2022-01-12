@@ -27,57 +27,63 @@ class _StatisticsPageWidgetState extends State<StatisticsPageWidget> {
       elevation: 5,
       borderRadius: BorderRadius.circular(8),
       child: Container(
-        width: MediaQuery.of(context).size.width / 2,
-        height: MediaQuery.of(context).size.height / 3.8,
+        height: MediaQuery.of(context).size.height / 4,
         child: Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(8.0),
           child: Column(
             children: [
-              rowIcerik("Bamya Türü:", widget.okraType!),
-              SizedBox(height: 5),
-              rowIcerik("Toplama Tarihi:", widget.collectedDate!),
-              SizedBox(height: 5),
-              rowIcerik("Toplama Süresi:", widget.collectedTime!),
-              SizedBox(height: 5),
-              rowIcerik("Toplama Miktarı:", widget.collectedAmount!),
-              SizedBox(height: 5),
-              rowIcerik("Sonraki Toplama Tarihi:\n(Tahmini)",
-                  widget.nextCollectedDate!),
-              SizedBox(height: 5),
+              statisticInformation(),
             ],
           ),
         ),
       ),
     );
   }
-}
 
-Widget rowIcerik(String tanim, String icerik) {
-  return Row(
-    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-    children: [
-      Text(
-        tanim,
-        textAlign: TextAlign.center,
-        style: GoogleFonts.montserrat(
-          textStyle: const TextStyle(
-            fontSize: 14,
-            fontWeight: FontWeight.w300,
-            color: Color.fromRGBO(112, 112, 112, 1),
-          ),
-        ),
-      ),
-      SizedBox(width: 10),
-      Text(
-        icerik,
-        style: GoogleFonts.montserrat(
-          textStyle: const TextStyle(
-            fontSize: 14,
-            fontWeight: FontWeight.w500,
-            color: Color.fromRGBO(112, 112, 112, 1),
-          ),
-        ),
-      ),
-    ],
-  );
+  Widget statisticInformation() {
+    List<Map<String, String>> statisticList = [
+      {"title": "Bamya Türü:", "text": widget.okraType!},
+      {"title": "Toplama Tarihi:", "text": widget.collectedDate!},
+      {"title": "Toplama Süresi:", "text": widget.collectedTime!},
+      {"title": "Toplama Miktarı:", "text": widget.collectedAmount!},
+      {"title": "Sonraki Toplama Tarihi:", "text": widget.nextCollectedDate!}
+    ];
+    return Container(
+      height: MediaQuery.of(context).size.height / 5,
+      child: ListView.builder(
+          physics: PageScrollPhysics(),
+          itemCount: statisticList.length,
+          itemBuilder: (context, i) {
+            return Padding(
+              padding: const EdgeInsets.all(3.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    statisticList[i]["title"]!,
+                    textAlign: TextAlign.center,
+                    style: GoogleFonts.montserrat(
+                      textStyle: const TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w300,
+                        color: Color.fromRGBO(112, 112, 112, 1),
+                      ),
+                    ),
+                  ),
+                  Text(
+                    statisticList[i]["text"]!,
+                    style: GoogleFonts.montserrat(
+                      textStyle: const TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w500,
+                        color: Color.fromRGBO(112, 112, 112, 1),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            );
+          }),
+    );
+  }
 }
