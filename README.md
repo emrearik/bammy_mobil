@@ -39,4 +39,5 @@ In this project, it is aimed to control the plant harvesting bammy robot which h
 ## Design
 ![Design](https://i.imgur.com/xBTr1Gu.jpeg "Design")
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+https://www.figma.com/file/gvuxUPaeQ2hwHe0ci1fiqi/BammyMobilApp?node-id=5%3A0
 
